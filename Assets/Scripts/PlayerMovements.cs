@@ -60,10 +60,14 @@ public class PlayerMovements : MonoBehaviour
             touch = Input.GetTouch(0);
 
             if (touch.phase == TouchPhase.Began) {
-                startPos = touch.position;
+                Debug.Log(transform.position);
+                startPos = new Vector2(
+                    touch.position.x - width / 2,
+                    touch.position.y - height / 2
+                );
                 finalPos = new Vector2(
-                    startPos.x / (width / 10),
-                    startPos.y / (height / 10)
+                    startPos.x / (width / 50),
+                    startPos.y / (height / 50)
                 );
                 direction = new Vector2(
                     (finalPos.x - transform.position.x),

@@ -1330,6 +1330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207411852}
   - component: {fileID: 1207411851}
+  - component: {fileID: 1207411853}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1363,6 +1364,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207411853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207411850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c32935c4f745640bbc2c7944a54fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToPlay: 30
+  timerHasStarted: 0
+  timerIsRunning: 0
+  timerText: {fileID: 1819484357}
 --- !u!1 &1356169037
 GameObject:
   m_ObjectHideFlags: 0

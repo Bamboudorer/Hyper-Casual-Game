@@ -6,10 +6,9 @@ using UnityEngine.Events;
 public class PlayerMovements : MonoBehaviour
 {
     // Determine the speed of the boat, can be change for the tests
-    [SerializeField] private float boatSpeed = 0.01f;
-
+    // [SerializeField] private float boatSpeed = 0.01f;
     [SerializeField] private SwipeDetector swipeDetector;
-
+    public bool rightToPlay = false;
     private Rigidbody rb;
 
     void Start()
@@ -24,7 +23,9 @@ public class PlayerMovements : MonoBehaviour
 
     void Update()
     {
-        swipeDetector.CheckTouchPhase();
+        if (rightToPlay) {
+            swipeDetector.CheckTouchPhase();
+        }
     }
 
     /// <summary>

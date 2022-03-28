@@ -843,6 +843,11 @@ PrefabInstance:
       objectReference: {fileID: 350193457}
     - target: {fileID: 2155980068820618772, guid: ef4c8d4089efc4848a7c3b76e0ada2a5,
         type: 3}
+      propertyPath: maxPoints
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2155980068820618772, guid: ef4c8d4089efc4848a7c3b76e0ada2a5,
+        type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1822037815}
@@ -1053,6 +1058,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377253935168840428, guid: 023b4c04a95fe234c835938a739abfde,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517252301543316797, guid: 023b4c04a95fe234c835938a739abfde,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101510341688581802, guid: 023b4c04a95fe234c835938a739abfde,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 023b4c04a95fe234c835938a739abfde, type: 3}

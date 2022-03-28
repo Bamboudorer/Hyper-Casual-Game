@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class SpawnPoints : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject pointPrefab;
+    public List<Vector3> positions;
+    private int place = 0;
 
-    // Update is called once per frame
-    void Update()
+    public void SpwanSinglePoint()
     {
-        
+        if (positions.Count > place) {
+            Vector3 newPlace = positions[place];
+            // Instantiate(pointPrefab, new Vector3(1,0,1));
+            Instantiate(pointPrefab, positions[place], Quaternion.identity);
+            place += 1;
+        }
     }
 }

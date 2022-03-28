@@ -17,12 +17,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int numberOfPoints = 0;
     [SerializeField] private GameObject winSection;
     [SerializeField] private GameObject gameOverSection;
+    [SerializeField] private SpawnPoints spawnPoints;
 
     // Start is called before the first frame update
     void Start()
     {
-        maxPoints = 2;
-
         if (timer == null) {
             timer = GetComponent<CountDownTimer>();
         }
@@ -39,6 +38,11 @@ public class GameManager : MonoBehaviour
 
         winSection.gameObject.SetActive(false);
         gameOverSection.gameObject.SetActive(false);
+
+        spawnPoints = GameObject.Find("Spawn").GetComponent<SpawnPoints>();
+        if (spawnPoints != null) {
+            maxPoints += spawnPoints.positions.Count;
+        }
     }
 
     // Update is called once per frame
@@ -66,6 +70,9 @@ public class GameManager : MonoBehaviour
             startingText.gameObject.SetActive(false);
             gameHasStarted = true;
             timer.timerIsRunning = true;
+            if (spawnPoints != null) {
+                spawnPoints.SpwanSinglePoint();
+            }
         }
     }
 

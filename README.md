@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Bamboudorer/Lucas-Techer-Hyper-Casual-Game">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Screenshots/Screenshot02.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Lucas Techer Hyper Casual Game</h3>
@@ -66,6 +66,8 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot03]](https://example.com)
+[![Product Name Screen Shot][product-screenshot04]](https://example.com)
 
 The objectif is to create a little hyper casual game for androids. The game : </br>
 You  are on a little boat and you just need to navigate to collect some objects.
@@ -192,4 +194,6 @@ Project Link: [https://github.com/Bamboudorer/Lucas-Techer-Hyper-Casual-Game](ht
 [license-url]: https://github.com/Bamboudorer/Lucas-Techer-Hyper-Casual-Game/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lucas-techer
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: Screenshots/Screenshot01.png
+[product-screenshot03]: Screenshots/Screenshot03.png
+[product-screenshot04]: Screenshots/Screenshot04.png

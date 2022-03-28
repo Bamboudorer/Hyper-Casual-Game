@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,12 +13,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool gameHasFinished = false;
     [SerializeField] private TextMeshProUGUI startingText;
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private PlayerMovements player;
     [SerializeField] private int maxPoints;
     [SerializeField] private int numberOfPoints = 0;
     [SerializeField] private GameObject winSection;
     [SerializeField] private GameObject gameOverSection;
     [SerializeField] private SpawnPoints spawnPoints;
+    [SerializeField] private GameObject inGameMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +46,8 @@ public class GameManager : MonoBehaviour
         if (spawnPoints != null) {
             maxPoints += spawnPoints.positions.Count;
         }
+
+        levelText.text = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -91,6 +96,7 @@ public class GameManager : MonoBehaviour
         gameIsOn = false;
         gameHasFinished = true;
         gameOverSection.gameObject.SetActive(true);
+        StartCoroutine(EnableInGameMenu());
     }
 
     public void WinGame() {
@@ -98,5 +104,12 @@ public class GameManager : MonoBehaviour
         gameIsOn = false;
         gameHasFinished = true;
         winSection.gameObject.SetActive(true);
+        StartCoroutine(EnableInGameMenu());
+    }
+
+    IEnumerator EnableInGameMenu()
+    {
+        yield return new WaitForSeconds(4);
+        inGameMenu.gameObject.SetActive(true);
     }
 }

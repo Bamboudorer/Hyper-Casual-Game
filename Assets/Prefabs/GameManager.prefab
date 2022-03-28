@@ -52,12 +52,14 @@ MonoBehaviour:
   gameHasFinished: 0
   startingText: {fileID: 4077185907199740425}
   scoreText: {fileID: 4077185907437747427}
+  levelText: {fileID: 7121775738426874225}
   player: {fileID: 0}
   maxPoints: 0
   numberOfPoints: 0
   winSection: {fileID: 4077185908545378155}
   gameOverSection: {fileID: 4077185907796365777}
   spawnPoints: {fileID: 0}
+  inGameMenu: {fileID: 4077185907836981660}
 --- !u!114 &2155980068820618770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +240,24 @@ GameObject:
 --- !u!114 &4077185907199740425 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4077185907710515199, guid: 023b4c04a95fe234c835938a739abfde,
+    type: 3}
+  m_PrefabInstance: {fileID: 563011062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4077185907836981660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4077185907274599530, guid: 023b4c04a95fe234c835938a739abfde,
+    type: 3}
+  m_PrefabInstance: {fileID: 563011062}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7121775738426874225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7121775737897682055, guid: 023b4c04a95fe234c835938a739abfde,
     type: 3}
   m_PrefabInstance: {fileID: 563011062}
   m_PrefabAsset: {fileID: 0}

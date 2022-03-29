@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class PlayerMovements : MonoBehaviour
 {
     // Determine the speed of the boat, can be change for the tests
-    // [SerializeField] private float boatSpeed = 0.01f;
+    [SerializeField] private float boatSpeed = 5f;
     [SerializeField] private SwipeDetector swipeDetector;
     public bool rightToPlay = false;
     private Rigidbody rb;
@@ -44,7 +44,7 @@ public class PlayerMovements : MonoBehaviour
 
         magnitudePower /= swipeDetector.swipeThreshold;
 
-        Vector3 force = finalPos * magnitudePower;
+        Vector3 force = finalPos * magnitudePower * boatSpeed;
         rb.AddForce(force, ForceMode.Impulse);
     }
 }

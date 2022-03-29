@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2357576088081731740}
   - component: {fileID: 2357576088081731743}
   - component: {fileID: 2357576088081731742}
+  - component: {fileID: 164110553}
   m_Layer: 0
   m_Name: BoatPlayer
   m_TagString: Player
@@ -111,8 +112,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef6a860f943880478b9dfcbc2ee0240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boatSpeed: 2.5
   swipeDetector: {fileID: 2357576088081731743}
   rightToPlay: 0
+  maxRightField: 15.3
+  minLeftField: -15.3
+  maxUpField: 25
+  minDownField: -25
 --- !u!114 &2357576088081731743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,8 +147,27 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!95 &164110553
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2357576088081731713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a1bd95d0440d2b488629199bde78f99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2357576090009274079
 PrefabInstance:
   m_ObjectHideFlags: 0

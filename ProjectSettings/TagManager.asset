@@ -7,6 +7,8 @@ TagManager:
   - PointObject
   - DangerObject
   - CoinsObject
+  - Wall
+  - Water
   layers:
   - Default
   - TransparentFX

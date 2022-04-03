@@ -120,14 +120,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create the boat and navigate with him
-- [ ] Add the collectable objects and dangerous objects
-- [ ] Add the gameplay
-    - [ ] Start a game
-    - [ ] Lose and Win
-    - [ ] Restart the game
-- [ ] Add the mecanic for the level
-    - [ ]  Add at last 3 Level
+- [x] Create the boat and navigate with him
+- [x] Add the collectable objects and dangerous objects
+- [x] Add the gameplay
+    - [x] Start a game
+    - [x] Lose and Win
+    - [x] Restart the game
+- [x] Add the mecanic for the level
+    - [x]  Add at last 3 Level
 
 See the [open issues](https://github.com/Bamboudorer/Lucas-Techer-Hyper-Casual-Game/issues) for a full list of proposed features (and known issues).
 
@@ -165,7 +165,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Lucas Techer  <!-- email -->
 
-Project Link: [https://github.com/Bamboudorer/Lucas-Techer-Hyper-Casual-Game](https://github.com/Bamboudorer/Lucas-Techer-Hyper-Casual-Game)
+Project Link: [https://github.com/Bamboudorer/Hyper-Casual-Game](https://github.com/Bamboudorer/Hyper-Casual-Game)
 
 
 

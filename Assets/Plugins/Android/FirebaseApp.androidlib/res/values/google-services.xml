@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">628208013522</string>
+  <string name="google_storage_bucket" translatable="false">hyper-casual-game-1b794.appspot.com</string>
+  <string name="project_id" translatable="false">hyper-casual-game-1b794</string>
+  <string name="google_api_key" translatable="false">AIzaSyAnp45Y4uSAATkkAxrq9nkhFxemBJmbXpk</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAnp45Y4uSAATkkAxrq9nkhFxemBJmbXpk</string>
+  <string name="google_app_id" translatable="false">1:628208013522:android:06cd9957b6f621fab29d0b</string>
+  <string name="default_web_client_id" translatable="false">628208013522-lu0j356f0ufv1mmnh9n3sm6jejtjrspg.apps.googleusercontent.com</string>
+</resources>

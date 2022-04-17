@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
         spawnPoints = GameObject.Find("Spawn").GetComponent<SpawnPoints>();
         if (spawnPoints != null) {
-            maxPoints += spawnPoints.positions.Count;
+            maxPoints += spawnPoints.GetCount();
         }
 
         levelText.text = SceneManager.GetActiveScene().name;

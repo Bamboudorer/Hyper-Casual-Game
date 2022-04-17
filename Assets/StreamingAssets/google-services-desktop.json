@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "628208013522",
+    "project_id": "hyper-casual-game-1b794",
+    "storage_bucket": "hyper-casual-game-1b794.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628208013522:ios:fe08ca7ab9499088b29d0b",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Lucas-Techer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628208013522-gnashrkon6nn3hrtrbkn6hq7lkue0qoq.apps.googleusercontent.com"
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm6Z9PorNcqkiPdfLclxqnthMwm8M9yKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

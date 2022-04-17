@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnPoints : MonoBehaviour
 {
-    public GameObject pointPrefab;
-    public List<Vector3> positions;
-    private int place = 0;
+    [SerializeField] private GameObject pointPrefab;
+    [SerializeField] private List<Vector3> positions;
+    [SerializeField] private int place = 0;
+
 
     public void SpwanSinglePoint()
     {
@@ -16,5 +18,15 @@ public class SpawnPoints : MonoBehaviour
             Instantiate(pointPrefab, positions[place], Quaternion.identity);
             place += 1;
         }
+    }
+
+    public int GetCount()
+    {
+        return positions.Count;
+    }
+
+    public void AddSpawns(List<Vector3> positions_add)
+    {
+        positions.AddRange(positions_add);
     }
 }

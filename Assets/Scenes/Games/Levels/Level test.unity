@@ -333,7 +333,6 @@ MonoBehaviour:
     type: 3}
   positions: []
   place: 0
-  groupsOfSpawns: []
 --- !u!4 &775355209
 Transform:
   m_ObjectHideFlags: 0

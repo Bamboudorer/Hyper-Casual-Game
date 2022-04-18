@@ -12,7 +12,8 @@ public class SpawnPointsEditor : Editor
 {
     [Serializable] public struct GroupSpawnTemplate {
         public enum GroupSpawnType {
-            Line
+            Line,
+            Cross
         };
         
         public GroupSpawnType type;
@@ -55,15 +56,29 @@ public class SpawnPointsEditor : Editor
             tempGroupSpawn.nbr_spawn = 
                 EditorGUILayout.IntField("nbr of spawns",
                                         tempGroupSpawn.nbr_spawn);
+        switch (tempGroupSpawn.type) {
+            case GroupSpawnTemplate.GroupSpawnType.Line:
+                if (tempGroupSpawn.nbr_spawn < 2)
+                    tempGroupSpawn.nbr_spawn = 2;
+                break;
+            case GroupSpawnTemplate.GroupSpawnType.Cross:
+                if (tempGroupSpawn.nbr_spawn < 4)
+                    tempGroupSpawn.nbr_spawn = 4;
+                break;
+        }
             tempGroupSpawn.size = 
                 EditorGUILayout.FloatField("size of group",
                                         tempGroupSpawn.size);
+            if (tempGroupSpawn.size < 0)
+                tempGroupSpawn.size = 0;
                                         
+            tempGroupSpawn.angle = 
+                EditorGUILayout.FloatField("angle",
+                                        tempGroupSpawn.angle);
             switch (tempGroupSpawn.type) {
                 case GroupSpawnTemplate.GroupSpawnType.Line:
-                    tempGroupSpawn.angle = 
-                        EditorGUILayout.FloatField("angle",
-                                                tempGroupSpawn.angle);
+                    break;
+                case GroupSpawnTemplate.GroupSpawnType.Cross:
                     break;
             }
             
@@ -88,6 +103,20 @@ public class SpawnPointsEditor : Editor
                     new_vector += spawns.midle;
                     to_return.Add(new_vector);
                 }
+                break;
+            case GroupSpawnTemplate.GroupSpawnType.Cross:
+                GroupSpawnTemplate Line_a = spawns;
+                Line_a.type = GroupSpawnTemplate.GroupSpawnType.Line;
+                GroupSpawnTemplate Line_b = spawns;
+                Line_b.type = GroupSpawnTemplate.GroupSpawnType.Line;
+                Line_a.nbr_spawn /= 2;
+                Line_b.nbr_spawn /= 2;
+                if (spawns.nbr_spawn % 2 == 1)
+                    Line_b.nbr_spawn += 1;
+                Line_b.angle += 90;
+                
+                to_return.AddRange(GetGroupSpawnPositions(Line_a));
+                to_return.AddRange(GetGroupSpawnPositions(Line_b));
                 break;
         }
         return to_return;
